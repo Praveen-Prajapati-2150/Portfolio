@@ -1,5 +1,16 @@
 const positions = [
   {
+    company: 'Fi Elements',
+    position: 'Software Developer (ReactJS)',
+    link: '',
+    daterange: 'April 2022 - November 2022',
+    points: [
+      ' Developed VeddX, an advanced educational platform catering to both Learner and Expert user categories. The platform empowers Experts to impart knowledge on a diverse range of subjects to Learners.',
+      ' Within the system, Learners have the capability to post their specific study requirements, prompting Experts to submit proposals outlining their approach to teaching the specified topic.',
+      ' Experts, in turn, have the ability to publish information regarding the subjects they intend to teach. Learners can then enroll in these classes by remitting the associated fees to the respective Expert',
+    ],
+  },
+  {
     company: 'DesignX Studio',
     position: 'Frontend (ReactJS) Developer',
     link: '',

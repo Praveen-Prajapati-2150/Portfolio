@@ -3,7 +3,7 @@
 
 <!-- I am a co-founder and the CTO of [Arthena](https://arthena.com) where I build tools to price fine art quickly, accurately, and at scale. I also advise startups, and I invest in people and ideas through a [small venture fund](https://skepticalinvestments.biz). I am particularly interested in projects that touch health and safety, imaging, social impact, and aerospace. If you think I can be helpful to you or would like to meet me, please feel free to get in touch. -->
 
-I am a full-stack developer with 1 years of experience in the field. I have experience working with a variety of technologies and have a strong understanding of both front-end and back-end development. I am also open to relocating for the right opportunity and am excited about the prospect of working with a dynamic team.
+I am a full-stack(MERN) developer with 15 months of experience in the field. I have experience working with a variety of technologies and have a strong understanding of both front-end and back-end development. I am also open to relocating for the right opportunity and am excited about the prospect of working with a dynamic team.
 
 I am excited about the opportunity to work with your team and contribute my skills and experience to help drive the success of your company. I would be happy to provide you with additional information about my qualifications, and I look forward to hearing from you soon.
 

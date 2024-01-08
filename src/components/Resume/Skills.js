@@ -67,6 +67,10 @@ class Skills extends Component {
     });
   }
 
+  // let containerDesign = {
+  //   display: 'flex',
+  // }
+
   render() {
     return (
       <div className="skills">
