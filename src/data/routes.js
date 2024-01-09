@@ -21,6 +21,10 @@ const routes = [
     path: '/stats',
   },
   {
+    label: 'White Board',
+    path: '/white-board',
+  },
+  {
     label: 'Contact',
     path: '/contact',
   },
