@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import Main from '../layouts/Main';
 
 import Education from '../components/Resume/Education';
@@ -13,6 +16,9 @@ import Skills from '../components/Resume/Skills';
 import degrees from '../data/resume/degrees';
 import positions from '../data/resume/positions';
 import { skills, categories } from '../data/resume/skills';
+// import { faDownload } from '@fortawesome/free-regular-svg-icons/faDownload';
+// import Download from '../../public/images/projects/download.svg';
+import Download from '../assets/svg/download';
 
 const sections = [
   'Education',
@@ -28,7 +34,16 @@ const Resume = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading">
-            <Link to="resume">Resume</Link>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <>
+                <Link to="resume">Resume</Link>{' '}
+              </>
+              <div style={{ cursor: 'pointer' }}>
+                <a href="/public/pdf/Praveen_Prajapati_updated.pdf" download>
+                  <Download />
+                </a>
+              </div>
+            </div>
           </h2>
           <div className="link-container">
             {sections.map((sec) => (

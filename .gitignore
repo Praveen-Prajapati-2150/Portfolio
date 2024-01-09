@@ -47,3 +47,7 @@ build/
 
 # Nohup
 nohup.out
+
+autocrlf = false
+
+
