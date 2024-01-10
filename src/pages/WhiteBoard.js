@@ -159,19 +159,19 @@ const WhiteBoard = () => {
             <div
               style={{ ...inputStyle, backgroundColor: '#ff0000' }}
               onClick={() => handleColorChange('#ff0000')}
-            ></div>
+            />
             <div
               style={{ ...inputStyle, backgroundColor: '#00ff11' }}
               onClick={() => handleColorChange('#00ff11')}
-            ></div>
+            />
             <div
               style={{ ...inputStyle, backgroundColor: '#004ddf' }}
               onClick={() => handleColorChange('#004ddf')}
-            ></div>
+            />
             <div
               style={{ ...inputStyle, backgroundColor: '#ffffff' }}
               onClick={() => handleColorChange('#ffffff')}
-            ></div>
+            />
             <Pen color={color} />
             <button type="button" onClick={() => handleEraserClick()}>
               Eraser
