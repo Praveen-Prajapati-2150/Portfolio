@@ -79,7 +79,7 @@
       "error",
       "windows"
     ],
-    "no-console": "off",
+    // "no-console": "off",
   },
   "plugins": [
     "react"
