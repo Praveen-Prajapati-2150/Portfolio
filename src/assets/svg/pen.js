@@ -25,7 +25,7 @@ Pen.propTypes = {
 };
 
 Pen.defaultProps = {
-  color: '',
+  color: '#FFFFFF',
 };
 
 export default Pen;

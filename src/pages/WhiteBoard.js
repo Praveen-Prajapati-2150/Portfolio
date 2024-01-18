@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Main from '../layouts/Main';
 import Pen from '../assets/svg/pen';
+import '../static/css/pages/_whiteBoard.scss';
 
 const WhiteBoard = () => {
   const canvasRef = useRef(null);
@@ -79,11 +81,31 @@ const WhiteBoard = () => {
       //     context.stroke();
       //   }
 
+      // context.beginPath();
+      // context.lineTo(x, y);
+      // context.arc(x, y, isErasing ? eraserSize / 2 : 2.5, 0, Math.PI * 2, true);
+      // context.fillStyle = color;
+      // context.fill();
+      // context.lineWidth = 1;
+      // context.stroke();
+      // context.beginPath();
+      // context.moveTo(x, y);
+
+      // context.beginPath();
+      // context.lineTo(x, y);
+      // context.stroke();
+      // context.arc(x, y, isErasing ? eraserSize / 2 : 2.5, 0, Math.PI * 2, true);
+      // context.fill();
+      // context.lineWidth = 6;
+      // context.beginPath();
+      // context.moveTo(x, y);
+
       context.lineTo(x, y);
       context.stroke();
       context.beginPath();
       context.arc(x, y, isErasing ? eraserSize / 2 : 2.5, 0, Math.PI * 2, true);
       context.fill();
+      // context.lineWidth = 6;
       context.beginPath();
       context.moveTo(x, y);
     };
@@ -135,12 +157,8 @@ const WhiteBoard = () => {
   };
 
   return (
-    <Main title="Resume" description="Praveen Prajapati's Resume.">
-      <article
-        style={{ width: '100%', height: '100%' }}
-        className="post"
-        id="resume"
-      >
+    <Main fullPage title="Resume" description="Praveen Prajapati's Resume.">
+      <article style={{ width: '100%' }} className="post" id="resume">
         <div
           style={{
             display: 'flex',
@@ -149,13 +167,16 @@ const WhiteBoard = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            {/* <p>Pen Color:</p> */}
-            {/* <input
-              type="color"
-              value={color}
-              onChange={(e) => handleColorChange(e.target.value)}
-              style={{ ...inputStyle, backgroundColor: '#ffffff' }}
-            /> */}
+            <div className="input-color-container">
+              <input
+                id="input-color"
+                value={color}
+                className="input-color"
+                type="color"
+                onChange={(e) => handleColorChange(e.target.value)}
+              />
+            </div>
+
             <div
               style={{ ...inputStyle, backgroundColor: '#ff0000' }}
               onClick={() => handleColorChange('#ff0000')}
@@ -176,6 +197,7 @@ const WhiteBoard = () => {
             <button type="button" onClick={() => handleEraserClick()}>
               Eraser
             </button>
+            <FontAwesomeIcon icon="fa-solid fa-eraser" />
           </div>
           <button type="button" onClick={() => clearCanvas()}>
             Clear
