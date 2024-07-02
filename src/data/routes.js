@@ -20,6 +20,10 @@ const routes = [
     label: 'Stats',
     path: '/stats',
   },
+  // {
+  //   label: 'Blogs',
+  //   path: '/blogs',
+  // },
   {
     label: 'White Board',
     path: '/white-board',

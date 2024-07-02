@@ -14,7 +14,7 @@
     "build": "rimraf ./build && react-scripts build",
     "predeploy": "npm run build && react-snap",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "craco start",
     "lint": "eslint $(git ls-files '*.js')",
     "test": "react-scripts test --watchAll=false",
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
@@ -25,6 +25,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "0.1.18",
     "dayjs": "^1.11.3",
+    "framer-motion": "^11.2.12",
     "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "raw.macro": "^0.4.2",
@@ -40,6 +41,7 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.2.3",
     "babel-eslint": "^10.1.0",

@@ -10,19 +10,9 @@
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": [
-          "Link"
-        ],
-        "specialLink": [
-          "to",
-          "hrefLeft",
-          "hrefRight"
-        ],
-        "aspects": [
-          "noHref",
-          "invalidHref",
-          "preferButton"
-        ]
+        "components": ["Link"],
+        "specialLink": ["to", "hrefLeft", "hrefRight"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
       }
     ],
     "jsx-a11y/click-events-have-key-events": 0,
@@ -31,11 +21,7 @@
     "no-console": [
       "error",
       {
-        "allow": [
-          "warn",
-          "error",
-          "info"
-        ]
+        "allow": ["warn", "error", "info"]
       }
     ],
     "no-underscore-dangle": 0,
@@ -49,10 +35,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "react/jsx-no-useless-fragment": 0,
@@ -74,14 +57,11 @@
     // "linebreak-style": "off",
     "linebreak-style": 0,
     "global-require": 0,
-    "eslint-linebreak-style": [
-      0,
-      "error",
-      "windows"
-    ],
+    "eslint-linebreak-style": [0, "error", "windows"],
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "react/jsx-curly-newline": "off"
     // "no-console": "off",
   },
-  "plugins": [
-    "react"
-  ]
+  "plugins": ["react"]
 }

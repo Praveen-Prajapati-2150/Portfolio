@@ -1,0 +1,27 @@
+.container {
+
+  .inputButton {
+    transition: 2s;
+
+    &:hover {
+      .buttons {
+        button {
+          transform: scale(100%);
+        }
+      }
+    }
+
+    .button {
+      border-radius: 50px;
+    }
+
+    .buttons {
+      //   visibility: hidden;
+      transition: 2s;
+
+      button {
+        transform: scale(0%);
+      }
+    }
+  }
+}
